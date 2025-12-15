@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Park Issues | Together We Grow</title>
+    <link rel="icon" type="image/x-icon" href="images/twglogo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="localparistyle.css" />
+
+    <link rel="stylesheet" href="navandfooter.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body id="top">
+    <nav
+      class="navbar navbar-expand-lg park-navbar custom-shadow-light fixed-top"
+    >
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand navbar-icon me-3">
+          <img src="images/twglogo.png" alt="logo" width="50px" height="auto" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header" style="background-color: #527745">
+            <h5
+              class="offcanvas-title text-white"
+              id="offcanvasNavbarLabel"
+              style="font-family: 'Cinzel', serif"
+            >
+              Explore Parks
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-column mb-2 mb-lg-0">
+              <li class="nav-item me-3">
+                <a href="pimc.html" class="nav-link" aria-current="page"
+                  >Parks in main cities</a
+                >
+              </li>
+
+              <li class="nav-item dropdown me-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore parks
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="how_parks_work.html" class="dropdown-item"
+                      >How parks work</a
+                    >
+                  </li>
+                  <li>
+                    <a href="localpi.html" class="dropdown-item"
+                      >Local Park Issues</a
+                    >
+                  </li>
+                  <li>
+                    <a href="history.html" class="dropdown-item"
+                      >History of parks</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item me-3">
+                <a href="about_us.html" class="nav-link">About us</a>
+              </li>
+            </ul>
+
+            <hr class="my-3 d-lg-none" />
+
+            <ul class="navbar-nav ms-auto me-5" id="authNav">
+              <li class="nav-item nav-modal-btn">
+                <a
+                  class="nav-link text-white"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login_modal"
+                >
+                  Sign In
+                </a>
+              </li>
+              <li class="nav-item modal-signup">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register_modal"
+                >
+                  Sign Up
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="hero-wrapper mb-5"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+    >
+      <div class="hero-container">
+        <p class="tagline-top">WELCOME TO</p>
+        <h1 class="main-title text-shadow-heavy">Local Park Issues</h1>
+        <a href="#intro" class="next-button explore-news-button"
+          >Explore Issues</a
+        >
+      </div>
+    </div>
+    <div id="intro" class="mt-5"></div>
+    <br />
+    <section
+      class="intro-section mt-5 mb-5"
+      data-aos="zoom-in-up"
+      data-aos-delay="100"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+    >
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <div class="container-fluid">
+            <div
+              class="row d-flex flex-column-reverse flex-lg-row align-items-center"
+            >
+              <div class="col-12 col-lg-7 p-4 p-lg-5">
+                <h1 style="font-size: 26px">
+                  Understanding Local Park Challenges
+                </h1>
+                <br />
+                <p>
+                  Parks play a vital role in community wellbeing — but many face
+                  ongoing challenges such as poor maintenance, environmental
+                  damage, and safety concerns. This page highlights the major
+                  issues affecting parks across Myanmar and provides updates,
+                  insights, and helpful resources. We believe that through
+                  collective awareness and action, these green spaces can thrive
+                  again.
+                </p>
+              </div>
+              <div class="col-12 col-lg-5 text-center p-4 p-lg-0">
+                <img
+                  src="images/parkissues.png"
+                  alt="Park Bench in Yangon"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <section class="issue-types container-fluid mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <h1
+            class="mb-5 text-center"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+          >
+            Key Areas of Concern
+          </h1>
+          <div class="row justify-content-center">
+            <div
+              class="col-12 col-lg-4 mb-4"
+              data-aos="fade-up-left"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="issue-box p-4 text-center">
+                <i class="bi bi-tools icon-large"></i>
+                <h3>Maintenance Problems</h3>
+                <p>
+                  Littering, vandalism, broken equipment, overgrown grass, and
+                  general neglect due to understaffing in the city parks
+                  department.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-4 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="issue-box p-4 text-center">
+                <i class="bi bi-shield-fill-exclamation icon-large"></i>
+                <h3>Safety Concerns</h3>
+                <p>
+                  Poor or non-existent lighting at night, high-risk areas,
+                  increased minor crime reports, and lack of visible security
+                  personnel.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-4 mb-4"
+              data-aos="fade-up-right"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="issue-box p-4 text-center">
+                <i class="bi bi-cloud-rain-heavy-fill icon-large"></i>
+                <h3>Environmental Challenges</h3>
+                <p>
+                  Persistent flooding, water pollution in lakes, damaged natural
+                  ecosystems, and long-term effects of climate change on
+                  biodiversity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <section class="org-section mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <h1
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+          >
+            Helpful Organizations
+          </h1>
+          <p
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            class="mb-5"
+          >
+            These groups work tirelessly on the ground to improve parks, protect
+            nature, and support our communities.
+          </p>
+
+          <div class="org-row">
+            <a
+              href="https://www.cleanyangon.com/"
+              target="_blank"
+              class="org-card"
+              data-aos="zoom-in-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="org-logo">
+                <img src="images/cleany.png" alt="Clean Yangon Logo" />
+              </div>
+              <h4>Clean Yangon</h4>
+              <p>Community-led campaigns to keep the city clean.</p> </a
+            ><a
+              href="https://www.ycdc.gov.mm/"
+              target="_blank"
+              class="org-card"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="org-logo">
+                <img src="images/ycdc.png" alt="YCDC Logo" />
+              </div>
+              <h4>YCDC</h4>
+              <p>City Development Committee for park maintenance.</p>
+            </a>
+
+            <a
+              href="https://www.trashhero.org/"
+              target="_blank"
+              class="org-card"
+              data-aos="zoom-in-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="org-logo">
+                <img src="images/trashhero.png" alt="Trash Hero Logo" />
+              </div>
+              <h4>Trash Hero</h4>
+              <p>Global volunteer movement to clean local environments.</p>
+            </a>
+            <a
+              href="https://www.foei.org/who-are-friends-of-the-earth/contact/"
+              target="_blank"
+              class="org-card"
+              data-aos="zoom-in-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="org-logo">
+                <img src="images/mgn.jpg" alt="mgn" />
+              </div>
+              <h4>Friends of the Earth Myanmar</h4>
+              <p>Works on pollution reduction, and climate awareness.</p>
+            </a>
+
+            <a
+              href="https://thantmyanmar.org/"
+              target="_blank"
+              class="org-card"
+              data-aos="zoom-in-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="org-logo">
+                <img src="images/thant.jpg" alt="mgn" />
+              </div>
+              <h4>Thant Myanmar</h4>
+              <p>
+                Youth-led environmental organization focused on cleanups and
+                awareness.
+              </p>
+            </a>
+
+            <a
+              href="https://www.preventplastics.org/"
+              target="_blank"
+              class="org-card"
+              data-aos="zoom-in-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="org-logo">
+                <img src="images/pp.jpg" alt="mgn" />
+              </div>
+              <h4>Prevent Plastics</h4>
+              <p>Campaigns against plastic pollution.</p>
+            </a>
+
+            <a
+              href="https://www.cda-myanmar.com/"
+              target="_blank"
+              class="org-card"
+              data-aos="zoom-in-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="org-logo">
+                <img src="images/cda.png" alt="cda" />
+              </div>
+              <h4>CDAM</h4>
+              <p>Supports local communities and public space improvement.</p>
+            </a>
+
+            <a
+              href="https://www.doheain.com/"
+              target="_blank"
+              class="org-card"
+              data-aos="zoom-in-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="org-logo">
+                <img src="images/doheain.jpg" alt="house" />
+              </div>
+              <h4>Doh Eain</h4>
+              <p>Urban Public Space & Heritage Focus.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <footer>
+      <div class="park-footer">
+        <div class="container">
+          <div class="row text-center text-lg-start">
+            <div class="col-lg-3 mb-4 mb-lg-0 footer-mission-area">
+              <a href="index.html" class="footer-logo-link">
+                <img
+                  src="images/twglogo.png"
+                  alt="Together We Grow Logo"
+                  class="twg-logo"
+                />
+              </a>
+              <div class="mb-3">
+                <p class="footer-location mb-0">
+                  <i class="bi bi-geo-alt-fill me-2"></i>Location:
+                </p>
+                <p class="footer-address">
+                  Together We Grow, Bahan, Apt 486, Yangon
+                </p>
+              </div>
+              <div class="mb-3">
+                <p class="footer-location mb-0">
+                  <i class="bi bi-envelope-fill me-2"></i>Email:
+                </p>
+                <a
+                  href="mailto:contact@togetherwegrow.org"
+                  class="footer-contact-email"
+                  >contact@togetherwegrow.org</a
+                >
+                <p class="footer-location mb-0">
+                  <i class="bi bi-telephone-fill"></i> <span>Phone:</span>
+                </p>
+                <p class="footer-address">+95 9 43107552</p>
+              </div>
+            </div>
+
+            <div class="col-lg-1 d-none d-lg-block">
+              <div class="vertical-line-div"></div>
+            </div>
+
+            <div class="col-lg-3 mb-4 mb-lg-0 footer-links">
+              <h3 class="footer-link-title text-center text-lg-start">
+                Quick Links
+              </h3>
+              <div class="qlist text-center text-lg-start">
+                <a href="index.html" class="footer-link-item">Homepage</a>
+                <a href="pimc.html" class="footer-link-item"
+                  >Parks in Main Cities</a
+                >
+                <a href="about_us.html" class="footer-link-item">About Us</a>
+                <a href="references.html" class="footer-link-item"
+                  >References</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4 mb-lg-0 footer-explore">
+              <h3 class="footer-link-title text-center text-lg-start">
+                Featured Topics
+              </h3>
+              <div class="qlist text-center text-lg-start">
+                <a href="how_parks_work.html" class="footer-link-item"
+                  >How Parks Work</a
+                >
+                <a href="localpi.html" class="footer-link-item"
+                  >Local Park Issues</a
+                >
+                <a href="history.html" class="footer-link-item"
+                  >History of Parks</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block">
+              <div class="vertical-line-div"></div>
+            </div>
+
+            <div class="col-lg-1 d-flex flex-column align-items-center">
+              <h5 class="footer-heading">Follow</h5>
+              <div
+                class="footer-social-icons d-flex flex-column align-items-center align-items-lg-start"
+              >
+                <a
+                  href="https://www.facebook.com/share/1BepP785rY/"
+                  class="social-icon"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="https://t.me/laughaholics20111" class="social-icon"
+                  ><i class="bi bi-telegram"></i
+                ></a>
+                <a
+                  href="https://youtube.com/@laughaholics-j5c?si=kHeHUJoOuZu0P2PB"
+                  class="social-icon"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom text-center pt-4 mt-4">
+            <hr />
+            <p class="copyright-text">
+              &copy; <span id="current-year">2025</span> Together We Grow. All
+              rights reserved. |
+              <a
+                href="termsandconditions.html"
+                style="text-decoration: none; color: whitesmoke"
+                >Terms & Privacy</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal modal-park-custom"
+      id="register_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="registerModalLabel">Sign Up</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form id="registerForm" class="p-3">
+                <label for="regEmail">Email:</label>
+                <input
+                  id="regEmail"
+                  class="form-control mb-3"
+                  type="email"
+                  placeholder="Your Email"
+                />
+                <label for="regUsername">Name:</label>
+                <input
+                  id="regUsername"
+                  class="form-control mb-3"
+                  type="text"
+                  placeholder="Choose a Username"
+                />
+                <label for="regPassword">Password:</label>
+                <input
+                  id="regPassword"
+                  class="form-control mb-3"
+                  type="password"
+                  placeholder="Password"
+                />
+                <label for="regConfirmPassword">Confirm Password:</label>
+                <input
+                  id="regConfirmPassword"
+                  class="form-control mb-4"
+                  type="password"
+                  placeholder="Confirm Password"
+                />
+                <div class="form-check mb-4 text-start">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="regTermsCheck"
+                  />
+                  <label class="form-check-label" for="regTermsCheck">
+                    I agree to the
+                    <a href="termsandconditions.html" class="park-link"
+                      >Terms and Conditions</a
+                    >
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-park-submit w-100">
+                  Submit
+                </button>
+              </form>
+              <p class="text-center mt-3 mb-0 modal-switch-text">
+                Already have an account?
+                <a
+                  href="#"
+                  class="park-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login_modal"
+                  >Sign In</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal modal-park-custom"
+      id="login_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="loginModalLabel">Sign In</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form id="loginForm" class="p-3">
+                <label for="logEmail">Email:</label>
+                <input
+                  id="logEmail"
+                  class="form-control mb-3"
+                  type="email"
+                  placeholder="Email"
+                />
+                <label for="logUsername">Name:</label>
+                <input
+                  id="logUsername"
+                  class="form-control mb-3"
+                  type="text"
+                  placeholder="Username"
+                />
+                <label for="logPassword">Password:</label>
+                <input
+                  id="logPassword"
+                  class="form-control mb-4"
+                  type="password"
+                  placeholder="Your Password"
+                />
+                <button type="submit" class="btn btn-park-submit w-100 mt-2">
+                  Submit
+                </button>
+              </form>
+              <p class="text-center mt-3 mb-0 modal-switch-text">
+                Don't have an account?
+                <a
+                  href="#"
+                  class="park-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register_modal"
+                  >Sign Up</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#top" class="scroll-up">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+    </a>
+    <script src="auth.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

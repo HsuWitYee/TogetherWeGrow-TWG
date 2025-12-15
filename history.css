@@ -1,0 +1,459 @@
+body {
+  background-color: #f4f7fc;
+  font-family: "Higuen Elegant Serif", serif;
+  padding: 40px;
+}
+p {
+  font-family: "Comic Sans MS", cursive;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #214b2b;
+}
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.section-title {
+  font-size: 32px;
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.text-body {
+  font-size: 18px;
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+/* Image Styling */
+.img-stack {
+  position: relative;
+  width: 380px;
+}
+.img1 {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+  border: #000 solid;
+}
+.img2 {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 180px;
+  left: 120px;
+  z-index: 1;
+  border: #000 solid;
+}
+.container h1 {
+  font-size: 40px;
+}
+/*Gallery*/
+/* Gallery */
+.gallery-title {
+  font-size: 48px;
+  color: #3f4c2f;
+  margin-bottom: 30px;
+  font-family: Georgia, serif;
+}
+
+.gallery-img-wrapper {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-img:hover {
+  transform: scale(1.07);
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  height: 300px; /* Fixed height for uniform cards on larger screens */
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive display for carousels */
+.desktop-carousel {
+  display: block;
+}
+
+.tablet-carousel {
+  display: none;
+}
+
+.phone-carousel {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .tablet-carousel,
+  .phone-carousel {
+    display: none;
+  }
+  .desktop-carousel {
+    display: block;
+  }
+}
+
+@media (min-width: 745px) and (max-width: 991px) {
+  .desktop-carousel,
+  .phone-carousel {
+    display: none;
+  }
+  .tablet-carousel {
+    display: block;
+  }
+  .gallery-item {
+    height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-carousel,
+  .tablet-carousel {
+    display: none;
+  }
+  .phone-carousel {
+    display: block;
+  }
+  .gallery-item {
+    height: 200px; /* Adjust height for phone */
+  }
+}
+/* TIMELINE SECTION */
+.timeline-section {
+  margin-top: 120px;
+  position: relative;
+}
+/* Vertical line*/
+.timeline-section::before {
+  content: "";
+  position: absolute;
+  left: 300px;
+  top: 50px;
+  width: 4px;
+  height: 100%;
+  background: #3f4c2f;
+}
+/* Timeline items */
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 40px;
+  margin-bottom: 80px;
+  padding-left: 100px;
+  min-height: 60px; /* Ensure consistent height */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+.timeline-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Left title*/
+.timeline-left {
+  position: absolute;
+  left: 160px;
+  width: 140px;
+  top: 5px;
+}
+.timeline-left h3 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #3f4c2f;
+  margin: 0;
+}
+/* Right text */
+.timeline-right {
+  flex: 1;
+  max-width: 640px;
+  margin-left: 220px;
+}
+.timeline-right p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+/* Circle*/
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 281px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background: #3f4c2f;
+  border-radius: 50%;
+  z-index: 2;
+}
+/* Animation Keyframes */
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*Accordion*/
+.accordion {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+.accordion-item {
+  background: #214b2b;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+.accordion-header {
+  width: 100%;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: left;
+  color: #ffffff;
+}
+.accordion-header .icon {
+  font-size: 32px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.accordion-item.open .icon {
+  transform: rotate(180deg);
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+  color: white;
+}
+.accordion-item.open .accordion-content {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 10px;
+}
+.accordion-item.open .icon {
+  content: "-";
+}
+
+.accordion {
+  width: 90%;
+  float: left;
+  margin-right: 30px;
+}
+/*Fade*/
+.fade-slider {
+  position: relative;
+  width: 100%;
+  height: 300px; /* adjust height */
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.fade-slider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.fade-slider img.active {
+  opacity: 1;
+}
+/* IMAGE FADE SLIDESHOW */
+.fade-slideshow {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.fade-slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.fade-slideshow img.active {
+  opacity: 1;
+}
+
+/* Responsive Adjustments */
+
+/* Tablet: resize History images but keep stacking */
+@media (max-width: 1244px) {
+  .img-div {
+    margin-right: 0px;
+  }
+  .img1 {
+    width: 200px;
+    bottom: -30px;
+    right: 30px;
+  }
+  .img2 {
+    width: 400px;
+    top: 130px;
+    left: 30px;
+  }
+}
+@media (max-width: 990px) {
+  .img-div {
+    margin-right: 0px;
+  }
+  .img1 {
+    width: 150px;
+    bottom: -30px;
+    right: -10px;
+  }
+  .img2 {
+    width: 300px;
+    top: 130px;
+    left: 70px;
+    margin-bottom: 100px;
+  }
+}
+/* Timeline positioning for smaller screens */
+@media (max-width: 991.98px) {
+  .timeline-section::before {
+    left: 20px !important;
+    height: 90% !important;
+  }
+  .timeline-left {
+    position: static !important;
+    width: 100% !important;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .timeline-right {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+  }
+  .timeline-item {
+    flex-direction: column !important;
+    padding-left: 40px !important;
+  }
+  .timeline-item::before {
+    left: 0 !important;
+    top: 10px !important;
+    transform: none !important;
+  }
+}
+/* ---- Fade-in Animation ---- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: 0.8s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Floating Images ---- */
+.img-stack img {
+  animation: float 4s ease-in-out infinite;
+}
+.img2 {
+  animation-delay: 1.2s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ---- Gallery Hover Zoom ---- */
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+.gallery-img {
+  transition: transform 0.4s ease;
+}
+
+/* ---- Accordion Animation ---- */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.accordion-item.open .accordion-content {
+  max-height: 200px;
+  padding: 15px;
+}
+
+/* ---- Timeline Slide-In ---- */
+.timeline-item {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: 0.8s ease-out;
+}
+.timeline-item.show {
+  opacity: 1;
+  transform: translateX(0);
+}

@@ -1,0 +1,85 @@
+body {
+  font-family: "Cormorant Garamond", serif;
+  background-color: white;
+  color: #000;
+  padding-bottom: 80px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #527745;
+  font-size: 2.4rem;
+}
+
+p,
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.references-intro {
+  background-color: #b1e1ff;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  border-left: 8px solid #527745;
+}
+
+.references-intro p {
+  font-size: 1.25rem;
+}
+
+.card {
+  border-radius: 12px;
+  border: 2px solid #bae68c;
+  transition: 0.3s ease;
+  height: 100%;
+}
+
+.card-header {
+  background-color: #bae68c;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.visit-link {
+  color: #527745;
+  text-decoration: none;
+}
+.visit-link:hover {
+  color: black;
+  text-decoration: underline;
+}
+.card:hover {
+  background-color: #b1e1ff50;
+  transform: translateY(-4px);
+  border-color: #527745;
+}
+
+.card-footer a {
+  color: #527745;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card-footer a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.section-title {
+  margin-top: 50px;
+}
+
+/* hover effect */
+.bi {
+  margin-right: 5px;
+  transition: 0.3s;
+}
+
+.bi:hover {
+  transform: scale(1.25);
+  color: #527745;
+}

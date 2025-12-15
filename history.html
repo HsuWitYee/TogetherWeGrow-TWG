@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Parks</title>
+      <!--Favicon picture-->
+    <link rel="icon" type="image/x-icon" href="images/twglogo.png" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="history.css">
+    <link rel="stylesheet" href="navandfooter.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+     <!-- Bootstap Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+</head>
+<body id="top">
+     <nav
+      class="navbar navbar-expand-lg park-navbar custom-shadow-light fixed-top"
+    >
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand navbar-icon me-3">
+          <img src="images/twglogo.png" alt="logo" width="50px" height="auto" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header" style="background-color: #527745">
+            <h5
+              class="offcanvas-title text-white"
+              id="offcanvasNavbarLabel"
+              style="font-family: 'Cinzel', serif"
+            >
+              Explore Parks
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-column mb-2 mb-lg-0">
+              <li class="nav-item me-3">
+                <a href="pimc.html" class="nav-link" aria-current="page"
+                  >Parks in main cities</a
+                >
+              </li>
+
+              <li class="nav-item dropdown me-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore parks
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="how_parks_work.html" class="dropdown-item"
+                      >How parks work</a
+                    >
+                  </li>
+                  <li>
+                    <a href="localpi.html" class="dropdown-item"
+                      >Local Park Issues</a
+                    >
+                  </li>
+                  <li>
+                    <a href="history.html" class="dropdown-item"
+                      >History of parks</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item me-3">
+                <a href="about_us.html" class="nav-link">About us</a>
+              </li>
+            </ul>
+
+            <hr class="my-3 d-lg-none" />
+
+            <ul class="navbar-nav ms-auto me-5" id="authNav">
+              <li class="nav-item nav-modal-btn">
+                <a
+                  class="nav-link text-white"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login_modal"
+                >
+                  Sign In
+                </a>
+              </li>
+              <li class="nav-item modal-signup">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register_modal"
+                >
+                  Sign Up
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!--History of park--> <br><br><br><br><br><br> 
+<div class="container mt-5"    >
+    <div class="row align-items-start">
+        
+        <!-- LEFT SIDE TEXT -->
+        <div class="col-md-6">
+            <h1>History Of Parks</h1>
+            <p class="subtitle">Let's Dive Into It!</p>
+
+            <h2 class="section-title">Introduction</h2>
+            <p class="text-body">
+                Public parks have been an important part of communities for hundreds of years. They were first created as peaceful places where people could relax, escape crowded cities, and enjoy nature. Over time, parks began adding walking paths, gardens, and areas for families to gather and play.
+            </p>
+        </div>
+
+        <!-- RIGHT SIDE IMAGES -->
+        <div class=" img-div col-md-6 d-flex justify-content-center">
+            <div class="img-stack">
+                <img src="img/history pic2.png" class="img1">
+                <img src="img/history pic1.png" class="img2">
+            </div>
+        </div>
+
+    </div>
+</div>
+<br><br><br><br><br><br><br><br>
+<!-- PHOTO GALLERY - RESPONSIVE MULTI-IMAGE CAROUSEL -->
+<div class="container">
+    <h1 class="text-center gallery-title">Photo Gallery</h1>
+    
+    <!-- DESKTOP CAROUSEL (3 items per slide) -->
+    <div id="desktopCarousel" class="carousel slide desktop-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner pt-3 ps-3 pe-3">
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/old scenery.jpg" class="gallery-img w-100" alt="Park 1">
+                            <p class="caption text-center">Old park scenery filled with natural greenery.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/1900s parks.jpg" class="gallery-img w-100" alt="Park 2">
+                            <p class="caption text-center">Socializing in parks in old times</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/Canford park.jpg" class="gallery-img w-100" alt="Park 3">
+                            <p class="caption text-center">Empty green spaces in parks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/lincoln park chicago 1900.jpg" class="gallery-img w-100" alt="Park 4">
+                            <p class="caption text-center">Lincoln Park Chicago in the 1900s</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/Kandawgyi 2nd pic.jpg" class="gallery-img w-100" alt="Park 5">
+                            <p class="caption text-center">Kandawgyi park with Shwedagon in the background</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/old park photo of myanmar.jpg" class="gallery-img w-100" alt="Park 6">
+                            <p class="caption text-center">A park in myanmar in the old times</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ARROWS -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#desktopCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#desktopCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    
+    <!-- TABLET CAROUSEL (2 items per slide) -->
+    <div id="tabletCarousel" class="carousel slide tablet-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner pt-3 ps-3 pe-3">
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/old scenery.jpg" class="gallery-img w-100" alt="Park 1">
+                            <p class="caption text-center">Old park scenery filled with natural greenery.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/1900s parks.jpg" class="gallery-img w-100" alt="Park 2">
+                            <p class="caption text-center">Socializing in parks in old times</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/Canford park.jpg" class="gallery-img w-100" alt="Park 3">
+                            <p class="caption text-center">Empty green spaces in parks</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/lincoln park chicago 1900.jpg" class="gallery-img w-100" alt="Park 4">
+                            <p class="caption text-center">Lincoln Park Chicago in the 1900s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE 3 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/Kandawgyi 2nd pic.jpg" class="gallery-img w-100" alt="Park 5">
+                            <p class="caption text-center">Kandawgyi park with Shwedagon in the background</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/old park photo of myanmar.jpg" class="gallery-img w-100" alt="Park 6">
+                            <p class="caption text-center">A park in myanmar in the old times</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ARROWS -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#tabletCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#tabletCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    
+    <!-- PHONE CAROUSEL (1 item per slide) -->
+    <div id="phoneCarousel" class="carousel slide phone-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner pt-3 ps-3 pe-3">
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/old scenery.jpg" class="gallery-img w-100" alt="Park 1">
+                            <p class="caption text-center">Old park scenery filled with natural greenery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/1900s parks.jpg" class="gallery-img w-100" alt="Park 2">
+                            <p class="caption text-center">Socializing in parks in old times</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE 3 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/Canford park.jpg" class="gallery-img w-100" alt="Park 3">
+                            <p class="caption text-center">Empty green spaces in parks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE 4 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/lincoln park chicago 1900.jpg" class="gallery-img w-100" alt="Park 4">
+                            <p class="caption text-center">Lincoln Park Chicago in the 1900s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE 5 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/Kandawgyi 2nd pic.jpg" class="gallery-img w-100" alt="Park 5">
+                            <p class="caption text-center">Kandawgyi park with Shwedagon in the background</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE 6 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="gallery-item">
+                            <img src="img/old park photo of myanmar.jpg" class="gallery-img w-100" alt="Park 6">
+                            <p class="caption text-center">A park in myanmar in the old times</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ARROWS -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#phoneCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#phoneCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+<!--Timeline title-->
+  <div class="d-flex align-items-center mt-3">
+      <span
+        class="px-4 py-2 border border-dark rounded-pill fs-4 fw-normal timeline-label"
+        style="background-color: #214b2b; color: #ffffff"
+      >
+      Timeline
+      </span>
+      <div class="flex-grow-1 border-bottom border-dark ms-2"></div>
+    </div>
+</div>
+<!--Timeline-->
+<section class="timeline-section container mt-0 mb-5">
+    <h2 class="timeline-main-title mb-5 text-center" style="font-size:42px; font-weight:bold; color:#3f4c2f;    ">
+        Timeline of Parks
+    </h2>
+
+    <div class="timeline-item">
+        <div class="timeline-left">
+            <h3>1800s</h3>
+        </div>
+        <div class="timeline-right">
+            <p>Early public parks were built as calm spaces for city communities, providing green areas for people living in crowded cities.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-left">
+            <h3>1900s</h3>
+        </div>
+        <div class="timeline-right">
+            <p>Parks expanded with walking paths, gardens, and playgrounds to promote family-friendly recreation and public gatherings.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-left">
+            <h3>2000s</h3>
+        </div>
+        <div class="timeline-right">
+            <p>Modern parks now focus on sustainability, biodiversity, accessibility, and emotional well-being.</p>
+        </div>
+    </div>
+</section>
+<!--More about Parks-->
+<div class="d-flex align-items-center mt-5 more-parks-spacing">
+  <span class="px-4 py-2 border border-dark rounded-pill fs-4 fw-normal timeline-label">
+    More about Parks
+  </span>
+  <div class="flex-grow-1 border-bottom border-dark ms-2"></div>
+</div>
+<br><br>
+<!--Accordion-->
+<div class="container mt-4">
+    <div class="row">
+
+        <!-- Left side: Accordion -->
+        <div class="col-md-5">
+            <div class="accordion">
+                <div class="accordion-item">
+    <button class="accordion-header">
+      <span>Why were the first public parks created?</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <p>They were created to give people in crowded cities a place to relax, exercise, and enjoy nature, especially during the Industrial Revolution.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion-header">
+      <span>How did parks change during the Industrial Revolution?</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <p class="color: white;">As cities became polluted and overcrowded, parks were designed to improve public health and provide clean air and green space.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion-header">
+      <span>How are modern parks different from early parks?</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <p>Modern parks focus on recreation, community activities, environmental protection, and mental well-being, not just decoration.</p>
+    </div>
+  </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: Fading Images -->
+      <div class="col-md-7 accordion-image-section">
+          <div class="fade-slideshow" id="fadeShow">
+              <img src="img/Kandawgyi 1st pic.jfif" class="active">
+              <img src="img/Kandawgyi 2nd pic.jpg">
+              <img src="img/Kandawgyi 4th pic.jpg">
+              <img src="img/Kandawgyi 3rd pic.jpg">
+              <img src="img/Kandawgyi 5th pic.jpg">
+          </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+ <footer>
+      <div class="park-footer">
+        <div class="container">
+          <div class="row text-center text-lg-start">
+            <div class="col-lg-3 mb-4 mb-lg-0 footer-mission-area">
+              <a href="index.html" class="footer-logo-link">
+                <img
+                  src="images/twglogo.png"
+                  alt="Together We Grow Logo"
+                  class="twg-logo"
+                />
+              </a>
+              <div class="mb-3">
+                <p class="footer-location mb-0">
+                  <i class="bi bi-geo-alt-fill me-2"></i>Location:
+                </p>
+                <p class="footer-address">
+                  Together We Grow, Bahan, Apt 486, Yangon
+                </p>
+              </div>
+              <div class="mb-3">
+                <p class="footer-location mb-0">
+                  <i class="bi bi-envelope-fill me-2"></i>Email:
+                </p>
+                <a
+                  href="mailto:contact@togetherwegrow.org"
+                  class="footer-contact-email"
+                  >contact@togetherwegrow.org</a
+                >
+                <p class="footer-location mb-0">
+                  <i class="bi bi-telephone-fill"></i> <span>Phone:</span>
+                </p>
+                <p class="footer-address">+95 9 43107552</p>
+              </div>
+            </div>
+
+            <div class="col-lg-1 d-none d-lg-block">
+              <div class="vertical-line-div"></div>
+            </div>
+
+            <div class="col-lg-3 mb-4 mb-lg-0 footer-links">
+              <h3 class="footer-link-title text-center text-lg-start">
+                Quick Links
+              </h3>
+              <div class="qlist text-center text-lg-start">
+                <a href="index.html" class="footer-link-item">Homepage</a>
+                <a href="pimc.html" class="footer-link-item"
+                  >Parks in Main Cities</a
+                >
+                <a href="about_us.html" class="footer-link-item">About Us</a>
+                <a href="references.html" class="footer-link-item"
+                  >References</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4 mb-lg-0 footer-explore">
+              <h3 class="footer-link-title text-center text-lg-start">
+                Featured Topics
+              </h3>
+              <div class="qlist text-center text-lg-start">
+                <a href="how_parks_work.html" class="footer-link-item"
+                  >How Parks Work</a
+                >
+                <a href="localpi.html" class="footer-link-item"
+                  >Local Park Issues</a
+                >
+                <a href="history.html" class="footer-link-item"
+                  >History of Parks</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block">
+              <div class="vertical-line-div"></div>
+            </div>
+
+            <div class="col-lg-1 d-flex flex-column align-items-center">
+              <h5 class="footer-heading">Follow</h5>
+              <div
+                class="footer-social-icons d-flex flex-column align-items-center align-items-lg-start"
+              >
+                <a
+                  href="https://www.facebook.com/share/1BepP785rY/"
+                  class="social-icon"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="https://t.me/laughaholics20111" class="social-icon"
+                  ><i class="bi bi-telegram"></i
+                ></a>
+                <a
+                  href="https://youtube.com/@laughaholics-j5c?si=kHeHUJoOuZu0P2PB"
+                  class="social-icon"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom text-center pt-4 mt-4">
+            <hr />
+            <p class="copyright-text">
+              &copy; <span id="current-year">2025</span> Together We Grow. All
+              rights reserved. |
+              <a
+                href="termsandconditions.html"
+                style="text-decoration: none; color: whitesmoke"
+                >Terms & Privacy</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <div
+      class="modal modal-park-custom"
+      id="register_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="registerModalLabel">Sign Up</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form id="registerForm" class="p-3">
+                <label for="regEmail">Email:</label>
+                <input
+                  id="regEmail"
+                  class="form-control mb-3"
+                  type="email"
+                  placeholder="Your Email"
+                />
+                <label for="regUsername">Name:</label>
+                <input
+                  id="regUsername"
+                  class="form-control mb-3"
+                  type="text"
+                  placeholder="Choose a Username"
+                />
+                <label for="regPassword">Password:</label>
+                <input
+                  id="regPassword"
+                  class="form-control mb-3"
+                  type="password"
+                  placeholder="Password"
+                />
+                <label for="regConfirmPassword">Confirm Password:</label>
+                <input
+                  id="regConfirmPassword"
+                  class="form-control mb-4"
+                  type="password"
+                  placeholder="Confirm Password"
+                />
+                <div class="form-check mb-4 text-start">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="regTermsCheck"
+                  />
+                  <label class="form-check-label" for="regTermsCheck">
+                    I agree to the
+                    <a href="termsandconditions.html" class="park-link"
+                      >Terms and Conditions</a
+                    >
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-park-submit w-100">
+                  Submit
+                </button>
+              </form>
+              <p class="text-center mt-3 mb-0 modal-switch-text">
+                Already have an account?
+                <a
+                  href="#"
+                  class="park-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login_modal"
+                  >Sign In</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal modal-park-custom"
+      id="login_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="loginModalLabel">Sign In</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form id="loginForm" class="p-3">
+                <label for="logEmail">Email:</label>
+                <input
+                  id="logEmail"
+                  class="form-control mb-3"
+                  type="email"
+                  placeholder="Email"
+                />
+                <label for="logUsername">Name:</label>
+                <input
+                  id="logUsername"
+                  class="form-control mb-3"
+                  type="text"
+                  placeholder="Username"
+                />
+                <label for="logPassword">Password:</label>
+                <input
+                  id="logPassword"
+                  class="form-control mb-4"
+                  type="password"
+                  placeholder="Your Password"
+                />
+                <button type="submit" class="btn btn-park-submit w-100 mt-2">
+                  Submit
+                </button>
+              </form>
+              <p class="text-center mt-3 mb-0 modal-switch-text">
+                Don't have an account?
+                <a
+                  href="#"
+                  class="park-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register_modal"
+                  >Sign Up</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#top" class="scroll-up">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+    </a> 
+<script>
+    const items = document.querySelectorAll(".accordion-item");
+
+items.forEach(item => {
+  const header = item.querySelector(".accordion-header");
+  const icon = item.querySelector(".icon");
+
+  header.addEventListener("click", () => {
+    
+    const isOpen = item.classList.contains("open");
+
+    // Close all others
+    items.forEach(i => {
+      i.classList.remove("open");
+      i.querySelector(".icon").textContent = "+";
+    });
+
+    // Toggle current
+    if (!isOpen) {
+      item.classList.add("open");
+      icon.textContent = "−";
+    } else {
+      item.classList.remove("open");
+      icon.textContent = "+";
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".timeline-item");
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+    items.forEach(item => observer.observe(item));
+});
+// Time-lapse morphing animation
+document.addEventListener("DOMContentLoaded", function() {
+  const container = document.querySelector(".time-lapse-container");
+  const playBtn = document.getElementById("playMorph");
+  let isAnimating = false;
+
+  playBtn.addEventListener("click", function() {
+    if (isAnimating) return;
+    
+    isAnimating = true;
+    container.classList.add("time-lapse-active");
+    
+    // Animate progress bar
+    const progressFill = container.querySelector(".progress-fill");
+    progressFill.style.width = "100%";
+    
+    // Reset after animation
+    setTimeout(() => {
+      container.classList.remove("time-lapse-active");
+      progressFill.style.width = "0%";
+      isAnimating = false;
+    }, 2000);
+  });
+
+  // Auto-play on hover for desktop
+  container.addEventListener("mouseenter", function() {
+    if (!isAnimating) {
+      playBtn.click();
+    }
+  });
+});
+//Fade transitioning
+  const slides = document.querySelectorAll("#fadeShow img");
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+  }, 1900); // 3 sec per image
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="auth.js"></script>
+</body>  
+</html>

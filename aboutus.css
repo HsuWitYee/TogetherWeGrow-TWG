@@ -1,0 +1,370 @@
+/* BASE */
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utility Classes */
+.color-primary-text {
+  color: #527745;
+}
+
+.bg-light-green-section {
+  background-color: #bae68c;
+}
+
+.border-accent {
+  border: 3px solid #b1e1ff;
+}
+
+.color-text {
+  color: #333;
+}
+
+/* Scroll-Up Button */
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #bae68c;
+  color: #527745;
+  border: 2px solid #527745;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 10;
+}
+
+.scroll-up:hover {
+  background-color: #527745;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* TYPOGRAPHY AND FONT STYLES */
+
+/* Headings and Titles  */
+body h1,
+h2,
+body h3,
+body h4,
+body h5,
+body h6,
+.section-title,
+.park-card .card-title,
+.news-title,
+.review-name,
+.mv-title,
+.contact-card h5 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: 25px !important;
+}
+
+/* Paragraphs and General Text */
+p,
+.intro-text,
+.news-text,
+.review-message,
+.mv-sub,
+.small-text,
+.form-label,
+.warning {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px !important;
+}
+
+.mv-title {
+  color: #214b2b;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  margin-bottom: 4px;
+}
+
+.contact-card h5 {
+  color: #214b2b !important;
+  margin-bottom: 1rem !important;
+}
+
+.small-text {
+  color: #214b2b;
+}
+
+.faq-header button {
+  font-weight: 500;
+  background-color: #214b2b;
+  color: #ffffff;
+  border: none;
+}
+
+.faq-header button:hover,
+.faq-header button:focus {
+  background-color: #213b2b;
+  color: #ffffff;
+}
+
+/* BUTTONS AND INTERACTIVE ELEMENTS */
+
+/* Custom Buttons */
+.btn-primary-custom,
+.btn-card-primary,
+.first-s-button {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 0.6rem 1.8rem;
+  background: #e8f3ec;
+  color: #214b2b;
+  font-weight: 600;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease,
+    border-color 0.18s ease, transform 0.12s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+}
+
+.btn-primary-custom:hover,
+.btn-card-primary:hover,
+.first-s-button:hover {
+  transform: translateY(-1px);
+  background: #214b2b;
+  color: #ffffff;
+  border-color: #214b2b;
+}
+
+/* Outline Buttons */
+.btn-outline-custom {
+  background-color: transparent;
+  border: 2px solid #527745;
+  color: #527745;
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 5px;
+}
+
+.btn-outline-custom:hover {
+  background-color: #527745;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ Accordion */
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+/* ABOUT AND CONTACT SECTION */
+
+.about-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-board {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 22px;
+  max-width: 1150px;
+  width: 100%;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 10px #19875417;
+}
+
+.side-line-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* CARDS / FAQ / TEAM / CONTACT */
+.card-mva {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px #19875417;
+  height: 100%;
+}
+
+.card-mva .icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(25, 135, 84, 0.08);
+  color: #198754;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+}
+
+.faq-item {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  margin-bottom: 0.75rem;
+  background-color: #ffffff;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 0.35rem;
+  color: #0b1725;
+  background-color: #e5edf7;
+  text-decoration: none;
+}
+
+.social-links a.facebook:hover {
+  background-color: blue;
+  color: #ffffff;
+}
+
+.social-links a.telegram:hover {
+  background-color: #009cd7;
+  color: #ffffff;
+}
+
+.social-links a.pinterest:hover {
+  background-color: rgb(216, 70, 70);
+  color: #ffffff;
+}
+
+.social-links a.youtube:hover {
+  background-color: red;
+  color: #ffffff;
+}
+
+/* MEDIA QUERIES */
+
+/* Responsive styles for Tablet/Laptop */
+@media (max-width: 1025px) {
+  .about-board {
+    max-width: 900px;
+    padding: 30px 20px;
+  }
+}
+
+/* Responsive styles for Tablet */
+@media (max-width: 991px) {
+  .about-board {
+    padding: 25px 18px;
+  }
+}
+
+/* Responsive styles for Mobile */
+@media (max-width: 767.98px) {
+  .about-wrap {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .about-board {
+    max-width: 100%;
+    padding: 20px 15px;
+  }
+
+  .img-left-big,
+  .img-right-bottom {
+    height: auto;
+    max-height: 220px;
+  }
+
+  /* mobile font sizes */
+  .mv-title,
+  .contact-card h5 {
+    font-size: 20px !important;
+  }
+
+  p,
+  .mv-sub,
+  .small-text {
+    font-size: 15px !important;
+  }
+
+  .contact-card .card-body {
+    height: auto !important;
+  }
+}
+
+/* Responsive styles for Large Mobile */
+@media (max-width: 425px) {
+  .about-board {
+    padding: 15px 12px;
+  }
+
+  .first-s-button {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .social-links a {
+    width: 28px;
+    height: 28px;
+  }
+
+  .contact-card .card-body {
+    height: auto !important;
+  }
+}
+
+/* Responsive styles for Mobile */
+@media (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+
+  .about-board {
+    padding: 12px 10px;
+  }
+
+  .first-s-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .social-links a {
+    width: 26px;
+    height: 26px;
+  }
+}

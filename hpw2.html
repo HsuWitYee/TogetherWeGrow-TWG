@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Parks Work | Together We Grow</title>
+    <!--Favicon picture-->
+    <link rel="icon" type="image/x-icon" href="images/twglogo.png" />
+    <!-- External css link -->
+    <link rel="stylesheet" href="hpw.css" />
+    <!-- Bootstap CDN Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstap Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="navandfooter.css" />
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Love+Ya+Like+A+Sister&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style>
+      body {
+        font-family: "Cinzel", serif;
+      }
+      p {
+        font-family: "League Spartan", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 20px;
+      }
+      .hero-section-new {
+        height: 100vh;
+        background-image: url("images/hp1.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-overlay {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          rgba(177, 176, 176, 0.255),
+          rgba(0, 0, 0, 0.5)
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .hero-content-new {
+        max-width: 800px;
+        padding: 2rem;
+        color: white;
+      }
+
+      .hero-title-new {
+        font-family: "Alex Brush", cursive;
+        font-size: 5.5rem;
+        font-weight: lighter;
+        margin-bottom: 1rem;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      .hero-text-new {
+        font-size: 20px;
+        margin-bottom: 2rem;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      .first-h-button {
+        border: 2px solid transparent;
+        border-radius: 999px;
+        padding: 0.6rem 1.8rem;
+        background: #e8f3ec;
+        color: #214b2b;
+        font-weight: 600;
+        font-size: 0.98rem;
+        cursor: pointer;
+        transition: background-color 0.18s ease, color 0.18s ease,
+          border-color 0.18s ease, transform 0.12s ease;
+        white-space: nowrap;
+      }
+
+      .first-h-button:hover {
+        transform: translateY(-1px);
+        background: #214b2b;
+        color: #ffffff;
+        border-color: #214b2b;
+      }
+
+      .first-h-button:hover {
+        transform: translateY(-1px);
+        background: #214b2b;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .how-parks-work {
+        width: 75%;
+      }
+      .hpw-layout {
+        display: flex;
+        align-items: stretch;
+        background: #f4f6f7;
+        border-radius: 12px;
+      }
+
+      .hpw-menu {
+        min-width: 220px;
+        background: #f4f6f7;
+        padding: 16px 0;
+      }
+
+      .hpw-item {
+        width: 100%;
+        text-align: left;
+        border: none;
+        background: transparent;
+        padding: 10px 18px;
+        color: #184729;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        position: relative;
+      }
+
+      .hpw-subtitle {
+        display: block;
+        font-size: 0.85rem;
+        font-weight: 400;
+        color: #184729;
+      }
+
+      .hpw-item.active {
+        background: #214b2b;
+        color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+      }
+
+      .hpw-item.active .hpw-subtitle {
+        color: #e8f4ec;
+      }
+
+      .hpw-item.active::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -12px;
+        transform: translateY(-50%);
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 12px solid #214b2b;
+      }
+
+      .hpw-panel {
+        flex: 1;
+        background: #ffffff;
+        padding: 20px 24px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        border: 2px solid #214b2b30;
+      }
+
+      @media (max-width: 767.98px) {
+        .hpw-layout {
+          flex-direction: column;
+        }
+
+        .hpw-item.active::after {
+          display: none;
+        }
+
+        .hpw-panel {
+          border-radius: 0 0 12px 12px;
+          border-left: 2px solid #214b2b;
+        }
+      }
+    </style>
+  </head>
+  <body id="top">
+    <nav
+      class="navbar navbar-expand-lg park-navbar custom-shadow-light fixed-top"
+    >
+      <div class="container-fluid">
+        <a href="index2.html" class="navbar-brand navbar-icon me-3">
+          <img src="images/twglogo.png" alt="logo" width="50px" height="auto" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header" style="background-color: #527745">
+            <h5
+              class="offcanvas-title text-white"
+              id="offcanvasNavbarLabel"
+              style="font-family: 'Cinzel', serif"
+            >
+              Explore Parks
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-column mb-2 mb-lg-0">
+              <li class="nav-item me-3">
+                <a href="pimc2.html" class="nav-link" aria-current="page"
+                  >Parks in main cities</a
+                >
+              </li>
+
+              <li class="nav-item dropdown me-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore parks
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="hpw2.html" class="dropdown-item">How parks work</a>
+                  </li>
+                  <li>
+                    <a href="localpi2.html" class="dropdown-item"
+                      >Local Park Issues</a
+                    >
+                  </li>
+                  <li>
+                    <a href="history2.html" class="dropdown-item"
+                      >History of parks</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item me-3">
+                <a href="about_us2.html" class="nav-link">About us</a>
+              </li>
+            </ul>
+
+            <hr class="my-3 d-lg-none" />
+            <ul
+              class="navbar-nav ms-auto me-5"
+              id="userNav"
+              style="padding-right: 5%"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  id="userid"
+                  href="userpage.html"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                ></a>
+
+                <ul class="dropdown-menu aside">
+                  <li>
+                    <a class="dropdown-item" href="userpage2.html">
+                      <i class="bi bi-person-circle me-2"></i>
+                      Userpage
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#" id="logout">
+                      <i class="bi bi-box-arrow-right me-2"></i>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      class="hero-section-new"
+      style="background-image: url(images/hp2.jpeg)"
+    >
+      <div class="hero-overlay">
+        <div class="hero-content-new text-center">
+          <h1
+            class="hero-title-new"
+            style="text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8)"
+          >
+            How Parks Work
+          </h1>
+          <p class="hero-text-new">
+            Discover the magic behind the local parks! This page explains how
+            parks support wellbeing, suggest fun activities, and show how
+            everyone can help care for these green spaces. Whether you're a
+            visitor, a student, or a community member, learn how parks work for
+            you and your city.
+          </p>
+          <a href="#welcoming_hero_section" class="btn first-h-button"
+            >Explore more!</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- First Section (Parks' function) -->
+    <div class="container parks-function" id="welcoming_hero_section">
+      <div class="row align-items-center">
+        <!-- LEFT: Text and icons -->
+        <div class="col-lg-7 col-md-6 order-lg-1 order-md-2">
+          <h2
+            class="section-title text-center text-md-start mb-4"
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+          >
+            Parks Function
+          </h2>
+          <!-- Paragraph 1 -->
+          <div
+            class="d-flex align-items-start mb-4 pf-item"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1300"
+            data-aos-easing="ease-in-out"
+          >
+            <img
+              src="images/parksign.png"
+              alt="Park Sign"
+              class="pf-icon me-3"
+            />
+            <div>
+              <h4 class="pf-subheading">Recreation and Health</h4>
+              <p class="pf-text" style="font-size: 18px">
+                Parks provide essential spaces for physical activity such as
+                walking, jogging, cycling, and sports, which help prevent
+                chronic diseases like obesity and heart problems. They also
+                offer a peaceful environment for relaxation and mental
+                well-being, reducing stress and anxiety for visitors of all
+                ages.
+              </p>
+            </div>
+          </div>
+          <!-- Paragraph 2 -->
+          <div
+            class="d-flex align-items-start justify-content-between mb-4 pf-item"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="me-3 flex-grow-1">
+              <h4 class="pf-subheading">Environmental Benefits</h4>
+              <p class="pf-text" style="font-size: 18px">
+                Urban parks act as green lungs for cities, improving air quality
+                by filtering pollutants and releasing oxygen through plants.
+                They help lower urban temperatures, reduce the heat island
+                effect, and manage stormwater, making cities more resilient to
+                climate change.
+              </p>
+            </div>
+            <img src="images/parkswing.png" alt="Park Swing" class="pf-icon" />
+          </div>
+          <!-- Paragraph 3 -->
+          <div
+            class="d-flex align-items-start mb-4 pf-item"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1400"
+            data-aos-easing="ease-in-out"
+          >
+            <img
+              src="images/parkland.png"
+              alt="Park Land"
+              class="pf-icon me-3"
+            />
+            <div>
+              <h4 class="pf-subheading">Social and Community Building</h4>
+              <p class="pf-text" style="font-size: 18px">
+                Parks foster social interaction by hosting community events,
+                cultural activities, and informal gatherings. They create
+                inclusive spaces where people from diverse backgrounds can
+                connect, build relationships, and strengthen community ties.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- RIGHT: image -->
+        <div
+          class="col-lg-5 text-center mb-4 mb-lg-0 order-lg-2 order-md-1"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          <img
+            src="images/parkf.jpg"
+            alt="PARK"
+            class="img-fluid parks-function-img rounded shadow"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex align-items-center mt-3">
+      <span
+        class="px-4 py-2 border border-dark rounded-pill fs-4 fw-normal timeline-label"
+        style="background-color: #214b2b; color: #ffffff"
+      >
+        Park Impact
+      </span>
+      <div class="flex-grow-1 border-bottom border-dark ms-2"></div>
+    </div>
+
+    <!-- Second Section (How park works for us) -->
+    <section class="container how-parks-work mb-3">
+      <!-- OUTER bookmark tabs -->
+      <ul class="nav justify-content-center mb-4 gap-3" id="hpw-outer-tabs">
+        <li
+          class="nav-item"
+          data-aos="zoom-in-up"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+        >
+          <button
+            class="bookmark-tab active"
+            id="tab-wellbeing"
+            data-bs-toggle="tab"
+            data-bs-target="#pane-wellbeing"
+            type="button"
+          >
+            How parks support wellbeing
+          </button>
+        </li>
+
+        <li
+          class="nav-item"
+          data-aos="zoom-in-up"
+          data-aos-delay="100"
+          data-aos-duration="1400"
+          data-aos-easing="ease-in-out"
+        >
+          <button
+            class="bookmark-tab"
+            id="tab-activities"
+            data-bs-toggle="tab"
+            data-bs-target="#pane-activities"
+            type="button"
+          >
+            Suggested activities in the park
+          </button>
+        </li>
+
+        <li
+          class="nav-item"
+          data-aos="zoom-in-up"
+          data-aos-delay="100"
+          data-aos-duration="1600"
+          data-aos-easing="ease-in-out"
+        >
+          <button
+            class="bookmark-tab"
+            id="tab-action"
+            data-bs-toggle="tab"
+            data-bs-target="#pane-action"
+            type="button"
+          >
+            Taking action for parks
+          </button>
+        </li>
+      </ul>
+
+      <!-- OUTER tab panes -->
+      <div class="tab-content">
+        <!-- 1. How parks support wellbeing -->
+        <div
+          class="tab-pane fade show active"
+          id="pane-wellbeing"
+          data-aos="zoom-in-right"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="hpw-layout">
+            <!-- LEFT: vertical menu -->
+            <div class="hpw-menu nav flex-column" role="tablist">
+              <button
+                class="hpw-item active"
+                data-bs-toggle="tab"
+                data-bs-target="#wb-relax"
+                type="button"
+              >
+                Relax &amp; de-stress
+                <span class="hpw-subtitle">Calm your mind</span>
+              </button>
+              <button
+                class="hpw-item"
+                data-bs-toggle="tab"
+                data-bs-target="#wb-move"
+                type="button"
+              >
+                Be active
+                <span class="hpw-subtitle">Move your body</span>
+              </button>
+              <button
+                class="hpw-item"
+                data-bs-toggle="tab"
+                data-bs-target="#wb-connect"
+                type="button"
+              >
+                Connect with others
+                <span class="hpw-subtitle">Meet people</span>
+              </button>
+              <button
+                class="hpw-item"
+                data-bs-toggle="tab"
+                data-bs-target="#wb-nature"
+                type="button"
+              >
+                Feel close to nature
+                <span class="hpw-subtitle">Nature time</span>
+              </button>
+            </div>
+
+            <!-- RIGHT: white panel -->
+            <div class="hpw-panel tab-content">
+              <!-- Relax -->
+              <div class="tab-pane fade show active" id="wb-relax">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">CALM</h3>
+                <p class="sa-text">
+                  Parks give quiet green spaces away from noise, cars, and
+                  screens, letting the body and mind relax.
+                </p>
+                <p class="sa-text">
+                  Even a short break on grass or a bench lowers stress and helps
+                  students focus better.
+                </p>
+              </div>
+
+              <!-- Move -->
+              <div class="tab-pane fade" id="wb-move">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">MOVEMENT</h3>
+                <p class="sa-text">
+                  Paths, lawns, and sports areas let people walk, run, cycle, or
+                  play games without special equipment.
+                </p>
+                <p class="sa-text">
+                  Regular activity in parks strengthens hearts, muscles, and
+                  improves sleep.
+                </p>
+              </div>
+
+              <!-- Connect -->
+              <div class="tab-pane fade" id="wb-connect">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">CONNECTION</h3>
+                <p class="sa-text">
+                  Parks are free meeting spaces where friends, families, and
+                  neighbours can talk, play, and celebrate together.
+                </p>
+                <p class="sa-text">
+                  These everyday meetings help reduce loneliness and make the
+                  community feel stronger and more friendly.
+                </p>
+              </div>
+
+              <!-- Nature -->
+              <div class="tab-pane fade" id="wb-nature">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">NATURE LINK</h3>
+                <p class="sa-text">
+                  Trees, plants, birds, and fresh air help people feel close to
+                  nature, not just on screens.
+                </p>
+                <p class="sa-text">
+                  This connection encourages visitors to care for the
+                  environment and protect parks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Suggested activities in the park -->
+        <div class="tab-pane fade" id="pane-activities">
+          <div class="hpw-layout">
+            <!-- LEFT: vertical menu -->
+            <div class="hpw-menu nav flex-column" role="tablist">
+              <button
+                class="hpw-item active"
+                data-bs-toggle="tab"
+                data-bs-target="#ac-chill"
+                type="button"
+              >
+                Chill &amp; recharge
+                <span class="hpw-subtitle">Slow &amp; calm time</span>
+              </button>
+              <button
+                class="hpw-item"
+                data-bs-toggle="tab"
+                data-bs-target="#ac-play"
+                type="button"
+              >
+                Play &amp; move
+                <span class="hpw-subtitle">Games &amp; sports</span>
+              </button>
+              <button
+                class="hpw-item"
+                data-bs-toggle="tab"
+                data-bs-target="#ac-learn"
+                type="button"
+              >
+                Learn &amp; discover
+                <span class="hpw-subtitle">Outdoor learning</span>
+              </button>
+              <button
+                class="hpw-item"
+                data-bs-toggle="tab"
+                data-bs-target="#ac-create"
+                type="button"
+              >
+                Create &amp; share
+                <span class="hpw-subtitle">Art &amp; media</span>
+              </button>
+            </div>
+
+            <!-- RIGHT: white panel -->
+            <div class="hpw-panel tab-content">
+              <div class="tab-pane fade show active" id="ac-chill">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">BREAK</h3>
+                <p class="sa-text">
+                  Sit on a bench, lie on the grass, read a book, listen to
+                  music, or simply watch the clouds and trees move.
+                </p>
+                <p class="sa-text">
+                  Slow, quiet activities like these can refresh your mind and
+                  give you new ideas.
+                </p>
+              </div>
+
+              <div class="tab-pane fade" id="ac-play">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">GAME</h3>
+                <p class="sa-text">
+                  Join ball games, tag, frisbee, skipping, or simple running
+                  challenges with friends or family.
+                </p>
+                <p class="sa-text">
+                  Turning exercise into a game makes it easier to stay active
+                  and enjoy being outside.
+                </p>
+              </div>
+
+              <div class="tab-pane fade" id="ac-learn">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">DISCOVERY</h3>
+                <p class="sa-text">
+                  Use the park as an outdoor classroom: observe plants and
+                  insects, test wind direction, or compare different tree
+                  leaves.
+                </p>
+                <p class="sa-text">
+                  These small investigations make school subjects feel more real
+                  and memorable.
+                </p>
+              </div>
+
+              <div class="tab-pane fade" id="ac-create">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">CREATION</h3>
+                <p class="sa-text">
+                  Sketch the scenery, take photos, film short videos, or write
+                  poems inspired by the park.
+                </p>
+                <p class="sa-text">
+                  Sharing this creative work online can inspire others to visit
+                  and appreciate the park too.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Taking action for parks -->
+        <div class="tab-pane fade" id="pane-action">
+          <div class="hpw-layout">
+            <!-- LEFT: vertical menu -->
+            <div class="hpw-menu nav flex-column" role="tablist">
+              <button
+                class="hpw-item active"
+                data-bs-toggle="tab"
+                data-bs-target="#ta-respect"
+                type="button"
+              >
+                Respect the space
+                <span class="hpw-subtitle">Careful behaviour</span>
+              </button>
+              <button
+                class="hpw-item"
+                data-bs-toggle="tab"
+                data-bs-target="#ta-waste"
+                type="button"
+              >
+                Reduce waste
+                <span class="hpw-subtitle">Less rubbish</span>
+              </button>
+              <button
+                class="hpw-item"
+                data-bs-toggle="tab"
+                data-bs-target="#ta-join"
+                type="button"
+              >
+                Join activities
+                <span class="hpw-subtitle">Help together</span>
+              </button>
+              <button
+                class="hpw-item"
+                data-bs-toggle="tab"
+                data-bs-target="#ta-future"
+                type="button"
+              >
+                Plan for the future
+                <span class="hpw-subtitle">New ideas</span>
+              </button>
+            </div>
+
+            <!-- RIGHT: white panel -->
+            <div class="hpw-panel tab-content">
+              <div class="tab-pane fade show active" id="ta-respect">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">CARE</h3>
+                <p class="sa-text">
+                  Simple habits like staying on paths, not picking flowers, and
+                  keeping noise down protect plants, soil, and wildlife.
+                </p>
+                <p class="sa-text">
+                  When visitors respect the space, the park stays safe and
+                  comfortable for everyone.
+                </p>
+              </div>
+
+              <div class="tab-pane fade" id="ta-waste">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">CLEAN-UP</h3>
+                <p class="sa-text">
+                  Bring reusable bottles, use bins properly, and make sure you
+                  do not leave any rubbish behind after a visit.
+                </p>
+                <p class="sa-text">
+                  Clean parks are more attractive and protect animals from
+                  eating or getting trapped in litter.
+                </p>
+              </div>
+
+              <div class="tab-pane fade" id="ta-join">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">TEAMWORK</h3>
+                <p class="sa-text">
+                  Community events like clean‑ups, tree planting, or mural
+                  projects let residents work together to improve the park.
+                </p>
+                <p class="sa-text">
+                  Joining these activities builds pride and shows that the park
+                  is an important shared space.
+                </p>
+              </div>
+
+              <div class="tab-pane fade" id="ta-future">
+                <h3 class="sa-subtitle">THE</h3>
+                <h3 class="sa-subtitle-outline">FUTURE</h3>
+                <p class="sa-text">
+                  Students and local residents can share ideas for new features,
+                  safety improvements, or events through surveys and your
+                  website.
+                </p>
+                <p class="sa-text">
+                  Collecting this feedback online helps guide long‑term plans
+                  for revitalizing and caring for the park.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="d-flex align-items-center mt-3">
+      <span
+        class="px-4 py-2 border border-dark rounded-pill fs-4 fw-normal timeline-label"
+        style="background-color: #214b2b; color: #ffffff"
+      >
+        Park Features
+      </span>
+      <div class="flex-grow-1 border-bottom border-dark ms-2"></div>
+    </div>
+
+    <!-- Third Section (Things in Park) -->
+    <section class="container-fluid things-section">
+      <div class="row align-items-center things-row">
+        <!-- Left image + text -->
+        <div
+          class="col-md-4 text-center mb-4 mb-md-0 things-side"
+          data-aos="fade-up-right"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+        >
+          <img src="images/s3p1.png" class="picnic-img" alt="Playground area" />
+          <p class="things-intro">
+            Parks include many useful features such as benches, picnic tables,
+            trees, and play areas that make visits more comfortable and
+            enjoyable for everyone.
+          </p>
+        </div>
+
+        <!-- mini subtitle -->
+        <div
+          class="col-md-4 text-center mb-4 mb-md-0 things-center"
+          data-aos="zoom-in-up"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+        >
+          <h1 class="things-title">Things In<br />Parks</h1>
+          <p class="things-subtitle">
+            A quick look at the small details that keep a park lively, safe, and
+            welcoming.
+          </p>
+        </div>
+
+        <!-- Right image + text -->
+        <div
+          class="col-md-4 text-center things-side"
+          data-aos="fade-up-left"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+        >
+          <img
+            src="images/s3p2.gif"
+            class="picnic-img"
+            alt="Children on swings"
+          />
+          <p class="things-intro">
+            When people understand how these different things work together, it
+            becomes easier to care for the park and plan better spaces for the
+            future.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="bees-wrapper"
+      data-aos="fade-up-right"
+      data-aos-delay="100"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+    >
+      <div class="bees-slider">
+        <div class="bee-track">
+          <!-- 6 ORIGINAL CARDS -->
+          <div class="loop-bee-card">
+            <img src="images/bees.png" class="img-fluid" alt="bee" />
+            <h5 class="thing-name">Bees</h5>
+            <p><b>Role:</b> Pollinate flowers</p>
+            <p>
+              Bees help plants and trees in the park grow by moving pollen
+              between flowers.
+            </p>
+          </div>
+
+          <div class="loop-bee-card">
+            <img src="images/benches.png" class="img-fluid" alt="benches" />
+            <h5 class="thing-name">Benches</h5>
+            <p><b>Role:</b> Rest spots</p>
+            <p>
+              Benches give visitors a place to sit, relax, and enjoy the view
+              safely.
+            </p>
+          </div>
+
+          <div class="loop-bee-card">
+            <img src="images/trees.png" class="img-fluid" alt="trees" />
+            <h5 class="thing-name">Trees</h5>
+            <p><b>Role:</b> Shade &amp; shelter</p>
+            <p>
+              Trees provide shade, cleaner air, and homes for birds and insects.
+            </p>
+          </div>
+
+          <div class="loop-bee-card">
+            <img src="images/bins.png" class="img-fluid" alt="bins" />
+            <h5 class="thing-name">Bins</h5>
+            <p><b>Role:</b> Keep park clean</p>
+            <p>
+              Bins help reduce litter so the park stays safe and comfortable for
+              everyone.
+            </p>
+          </div>
+
+          <div class="loop-bee-card">
+            <img
+              src="images/playground.png"
+              class="img-fluid"
+              alt="playground"
+            />
+            <h5 class="thing-name">Playground</h5>
+            <p><b>Role:</b> Play &amp; learning</p>
+            <p>
+              Play areas support children’s health, confidence, and social
+              skills.
+            </p>
+          </div>
+
+          <div class="loop-bee-card">
+            <img src="images/lights.png" class="img-fluid" alt="lights" />
+            <h5 class="thing-name">Lights</h5>
+            <p><b>Role:</b> Safety</p>
+            <p>
+              Park lighting makes paths safer and extends the time people can
+              visit.
+            </p>
+          </div>
+
+          <!-- 6 DUPLICATED CARDS (for seamless loop) -->
+          <div class="loop-bee-card">
+            <img src="images/bees.png" class="img-fluid" alt="bee" />
+            <h5 class="thing-name">Bees</h5>
+            <p><b>Role:</b> Pollinate flowers</p>
+            <p>
+              Bees help plants and trees in the park grow by moving pollen
+              between flowers.
+            </p>
+          </div>
+
+          <div class="loop-bee-card">
+            <img src="images/benches.png" class="img-fluid" alt="benches" />
+            <h5 class="thing-name">Benches</h5>
+            <p><b>Role:</b> Rest spots</p>
+            <p>
+              Benches give visitors a place to sit, relax, and enjoy the view
+              safely.
+            </p>
+          </div>
+
+          <div class="loop-bee-card">
+            <img src="images/trees.png" class="img-fluid" alt="trees" />
+            <h5 class="thing-name">Trees</h5>
+            <p><b>Role:</b> Shade &amp; shelter</p>
+            <p>
+              Trees provide shade, cleaner air, and homes for birds and insects.
+            </p>
+          </div>
+
+          <div class="loop-bee-card">
+            <img src="images/bins.png" class="img-fluid" alt="bins" />
+            <h5 class="thing-name">Bins</h5>
+            <p><b>Role:</b> Keep park clean</p>
+            <p>
+              Bins help reduce litter so the park stays safe and comfortable for
+              everyone.
+            </p>
+          </div>
+
+          <div class="loop-bee-card">
+            <img
+              src="images/playground.png"
+              class="img-fluid"
+              alt="playground"
+            />
+            <h5 class="thing-name">Playground</h5>
+            <p><b>Role:</b> Play &amp; learning</p>
+            <p>
+              Play areas support children’s health, confidence, and social
+              skills.
+            </p>
+          </div>
+
+          <div class="loop-bee-card">
+            <img src="images/lights.png" class="img-fluid" alt="lights" />
+            <h5 class="thing-name">Lights</h5>
+            <p><b>Role:</b> Safety</p>
+            <p>
+              Park lighting makes paths safer and extends the time people can
+              visit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="park-footer">
+        <div class="container">
+          <div class="row text-center text-lg-start">
+            <div class="col-lg-3 mb-4 mb-lg-0 footer-mission-area">
+              <a href="index.html" class="footer-logo-link">
+                <img
+                  src="images/twglogo.png"
+                  alt="Together We Grow Logo"
+                  class="twg-logo"
+                />
+              </a>
+              <div class="mb-3">
+                <p class="footer-location mb-0">
+                  <i class="bi bi-geo-alt-fill me-2"></i>Location:
+                </p>
+                <p class="footer-address">
+                  Together We Grow, Bahan, Apt 486, Yangon
+                </p>
+              </div>
+              <div class="mb-3">
+                <p class="footer-location mb-0">
+                  <i class="bi bi-envelope-fill me-2"></i>Email:
+                </p>
+                <a
+                  href="mailto:contact@togetherwegrow.org"
+                  class="footer-contact-email"
+                  >contact@togetherwegrow.org</a
+                >
+                <p class="footer-location mb-0">
+                  <i class="bi bi-telephone-fill"></i> <span>Phone:</span>
+                </p>
+                <p class="footer-address">+95 9 43107552</p>
+              </div>
+            </div>
+
+            <div class="col-lg-1 d-none d-lg-block">
+              <div class="vertical-line-div"></div>
+            </div>
+
+            <div class="col-lg-3 mb-4 mb-lg-0 footer-links">
+              <h3 class="footer-link-title text-center text-lg-start">
+                Quick Links
+              </h3>
+              <div class="qlist text-center text-lg-start">
+                <a href="index2.html" class="footer-link-item">Homepage</a>
+                <a href="pimc2.html" class="footer-link-item"
+                  >Parks in Main Cities</a
+                >
+                <a href="about_us2.html" class="footer-link-item">About Us</a>
+                <a href="references2.html" class="footer-link-item"
+                  >References</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4 mb-lg-0 footer-explore">
+              <h3 class="footer-link-title text-center text-lg-start">
+                Featured Topics
+              </h3>
+              <div class="qlist text-center text-lg-start">
+                <a href="hpw2.html" class="footer-link-item">How Parks Work</a>
+                <a href="localpi2.html" class="footer-link-item"
+                  >Local Park Issues</a
+                >
+                <a href="history2.html" class="footer-link-item"
+                  >History of Parks</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block">
+              <div class="vertical-line-div"></div>
+            </div>
+
+            <div class="col-lg-1 d-flex flex-column align-items-center">
+              <h5 class="footer-heading">Follow</h5>
+              <div
+                class="footer-social-icons d-flex flex-column align-items-center align-items-lg-start"
+              >
+                <a
+                  href="https://www.facebook.com/share/1BepP785rY/"
+                  class="social-icon"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="https://t.me/laughaholics20111" class="social-icon"
+                  ><i class="bi bi-telegram"></i
+                ></a>
+                <a
+                  href="https://youtube.com/@laughaholics-j5c?si=kHeHUJoOuZu0P2PB"
+                  class="social-icon"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom text-center pt-4 mt-4">
+            <hr />
+            <p class="copyright-text">
+              <span id="current-year">2025</span> Together We Grow. All rights
+              reserved. |
+              <a
+                href="termsandconditions2.html"
+                style="text-decoration: none; color: whitesmoke"
+                >Terms & Privacy</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="scroll-up">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+    </a>
+    <!-- Every sections' ends -->
+    <script src="auth.js"></script>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

@@ -1,0 +1,318 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+body {
+  background-color: #f4f7fc;
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  font-family: "Cinzel", serif;
+
+  text-align: center;
+}
+
+p {
+  font-family: "League Spartan", sans-serif;
+
+  color: #214b2b;
+
+  font-size: 25px;
+}
+
+.tagline-top {
+  color: white;
+}
+
+h1 {
+  color: #214b2b;
+
+  font-weight: 700;
+
+  font-size: 2.5rem;
+
+  line-height: 1.03;
+
+  margin-bottom: 18px;
+}
+
+h3,
+h4 {
+  color: #214b2b;
+
+  font-size: 23px;
+}
+
+/* Utilities */
+
+.section-heading {
+  font-size: 30px;
+
+  margin-bottom: 30px;
+}
+
+.icon-large {
+  font-size: 3.5rem;
+
+  color: #214b2b;
+
+  margin-bottom: 15px;
+
+  display: block;
+}
+
+/* HERO SECTION */
+
+.hero-wrapper {
+  background-image: url("images/lpi.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+
+  width: 100%;
+
+  padding: 150px 20px 60px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.main-title {
+  font-size: 5.5rem;
+
+  font-family: "Alex Brush", cursive;
+
+  color: #ffffff;
+
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.45);
+
+  font-weight: lighter;
+}
+
+.next-button {
+  border: 2px solid transparent;
+
+  border-radius: 999px;
+
+  padding: 0.6rem 1.8rem;
+
+  background: #e8f3ec;
+
+  color: #214b2b;
+
+  font-weight: 600;
+
+  font-size: 0.98rem;
+
+  white-space: nowrap;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  margin: 10px auto;
+}
+
+.next-button:hover {
+  transform: translateY(-1px);
+
+  background: #214b2b;
+
+  color: #ffffff;
+
+  border-color: #214b2b;
+}
+
+/* INTRO SECTION */
+
+.intro-section {
+  margin: auto;
+
+  animation: fadeInUp 1s ease-out;
+}
+
+.intro-content {
+  display: flex;
+
+  align-items: center;
+
+  text-align: left;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-image {
+  flex: 1;
+}
+
+.intro-image img {
+  width: 100%;
+
+  border-radius: 12px;
+
+  transition: transform 0.3s ease;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  min-height: 300px;
+}
+
+.intro-image img:hover {
+  transform: scale(1.02);
+}
+
+/* ISSUETYPES SECTION (Boxes & News Layout) */
+
+.issue-box-container {
+  display: flex;
+
+  gap: 25px;
+
+  justify-content: center;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+.issue-box {
+  background: white;
+
+  height: 100%;
+
+  border-radius: 12px;
+
+  padding: 30px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-start;
+}
+
+.issue-box:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/*  ORG SECTION (Organizations) */
+
+.org-row {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 53px;
+
+  margin: 30px auto 0;
+
+  flex-wrap: wrap;
+}
+
+.org-card {
+  background: #fff;
+
+  width: 260px;
+
+  padding: 30px 7px;
+
+  border-radius: 15px;
+
+  text-decoration: none;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+  transition: transform 0.3s ease;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  border: 1px solid #eee;
+
+  height: 270px;
+}
+
+.org-card:hover {
+  transform: translateY(-10px);
+
+  border-color: #214b2b;
+}
+
+.org-logo {
+  width: 80px;
+
+  height: 80px;
+
+  background: #fff;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 15px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.org-logo img {
+  width: 50px;
+
+  height: 50px;
+
+  object-fit: contain;
+
+  border-radius: 50%;
+}
+
+.org-card h4 {
+  margin: 10px 0;
+
+  font-size: 1.3rem;
+}
+
+.org-card p {
+  font-size: 15px;
+
+  color: #555;
+
+  margin: 0;
+}

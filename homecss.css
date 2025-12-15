@@ -1,0 +1,303 @@
+body {
+  text-align: center;
+  font-family: "Cinzel", serif;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.text-shadow-heavy {
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 0, 0, 0.7);
+}
+p {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+}
+/*  Hero Section */
+
+.hero-wrapper {
+  background-image: url("images/homepagebg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 150px 20px 60px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.hero-container {
+  padding: 40px;
+  max-width: 800px;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 0;
+}
+
+.main-title {
+  font-family: "Alex Brush", cursive;
+  font-size: 8rem;
+  color: white;
+  margin: 0;
+  line-height: 0.8;
+  font-weight: lighter;
+}
+
+.tagline-top,
+.tagline-bottom {
+  font-family: "League Spartan", sans-serif;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+.tagline-top {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.tagline-bottom {
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+/* Hero Animations */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-container p,
+.hero-container h1,
+.hero-container a {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.hero-container .tagline-top {
+  animation-delay: 0.2s;
+}
+
+.hero-container .main-title {
+  animation-delay: 0.5s;
+}
+
+.hero-container .tagline-bottom {
+  animation-delay: 0.8s;
+}
+
+.hero-container .learn-more-button {
+  animation-delay: 1.1s;
+}
+
+/* Introduction Section */
+
+#intro-section {
+  background-color: white;
+  padding: 30px;
+}
+
+.intro-box {
+  border-radius: 15px;
+  box-shadow: none !important;
+}
+
+.intro-image-container {
+  height: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.intro-img-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 300px;
+}
+
+.intro-text {
+  line-height: 1.8;
+}
+
+/* Parks in Main Cities Section */
+
+.park-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.park-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.park-card-img-top {
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.park-card .card-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Explore Parks Section */
+
+.news-container {
+  box-shadow: none !important;
+}
+
+.news-title {
+  font-weight: 700;
+}
+
+.news-text {
+  font-size: 19px;
+  text-align: left;
+}
+
+.news-img-left {
+  min-height: 350px;
+}
+
+/* Our Community Speaks Section */
+
+.review-section-full-width {
+  overflow-x: hidden;
+  padding-bottom: 80px;
+}
+
+.review-section-full-width + footer {
+  margin-top: 0;
+}
+
+#reviews-hr {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.review-scroll-wrapper {
+  overflow: hidden;
+}
+
+.review-track {
+  display: flex;
+  white-space: nowrap;
+  animation: slide 30s linear infinite;
+  padding: 10px 0;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.review-track:hover {
+  animation-play-state: paused;
+}
+
+.review-track-reverse {
+  animation: slide-reverse 30s linear infinite;
+}
+
+.review-track-reverse:hover {
+  animation-play-state: paused;
+}
+
+.review-bubble-item {
+  flex-shrink: 0;
+  width: 300px;
+  padding: 0 10px;
+}
+
+.review-bubble {
+  background-color: white;
+  border: 3px solid #527745bd;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  white-space: normal;
+}
+
+.review-pfp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #527745;
+}
+
+.review-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.review-message {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.4;
+  height: 160px;
+}
+
+/* Review Track Animations */
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 65px;
+  }
+  .tagline-top {
+    font-size: 14px;
+  }
+  .tagline-bottom {
+    font-size: 18px;
+  }
+}
